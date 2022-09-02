@@ -42,20 +42,20 @@
     $aluno39 = new Aluno("Danadoni Lima", 2, 2, 6);
     $aluno40 = new Aluno("Everson Willlian", 7, 5, 5);
 
-    $listarAunos = [$aluno1, $aluno2, $aluno3, $aluno4,
-    $aluno5, $aluno6, $aluno7, $aluno8,
-    $aluno9, $aluno10, $aluno11, $aluno12,
-    $aluno13, $aluno14, $aluno15, $aluno16,
-    $aluno17, $aluno18, $aluno19, $aluno20,
-    $aluno21,
-    $aluno22, $aluno23, $aluno24, $aluno25,
-    $aluno26, $aluno27, $aluno28, $aluno29,
-    $aluno30, $aluno31, $aluno32, $aluno33,
-    $aluno34, $aluno35, $aluno36, $aluno37,
-    $aluno38, $aluno39, $aluno40
-];
+    $listarAlunos = [
+        $aluno1, $aluno2, $aluno3, $aluno4,
+        $aluno5, $aluno6, $aluno7, $aluno8,
+        $aluno9, $aluno10, $aluno11, $aluno12,
+        $aluno13, $aluno14, $aluno15, $aluno16,
+        $aluno17, $aluno18, $aluno19, $aluno20,
+        $aluno21, $aluno22, $aluno23, $aluno24, 
+        $aluno25, $aluno26, $aluno27, $aluno28, 
+        $aluno29, $aluno30, $aluno31, $aluno32, 
+        $aluno33, $aluno34, $aluno35, $aluno36, 
+        $aluno37, $aluno38, $aluno39, $aluno40
+    ];
     
-   // $json = json_encode($listarAunos);
+    $json = json_encode($listarAlunos);
 
     echo $json;
 

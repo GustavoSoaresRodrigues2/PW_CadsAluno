@@ -1,22 +1,27 @@
+function preencherCard(listarAlunos) {
 
+    var box = document.querySelector('.box')
+    var div = document.querySelector('.container')
 
-// Enviar uma requisição para um endereço web
- fetch ('http://localhost//Controller.php')
-    //garantir que a respota esta no formato JSON
-    .then(
-        function (response) {
-            return response.json();
-        })
-    // Realizar as operações que forem de interesse
-    .then(function(response){
-       response.forEach(aluno => {
-            inserirElementoNaTela(aluno);
-        });
-    }) 
+    for (let index = 0; index < 39; index++) {
 
-function inserirElementoNaTela(aluno) {
-    var box = document.querySelector(".box");
-    var linha = document.createElement("p");
-    linha.textContent = `Nome: ${aluno.nome} | Média: ${aluno.media}`;
-    box.appendChild(linha);
+        var printAluno = listarAlunos[index]
+
+        // criando uma div
+        var novaDiv = document.createElement('div')
+
+        // pegando os elementos da div BOX na div criada
+        novaDiv.innerHTML = box.innerHTML
+
+        // colocando uma class na div criada
+        novaDiv.classList.add('box')
+
+        // colocando no container
+        div.appendChild(novaDiv)
+
+        // inserindo a novaDiv na tela
+        novaDiv.children[1].children[0].textContent = printAluno.nome
+        novaDiv.children[1].children[1].textContent = printAluno.media
+        novaDiv.children[0].src = "./aluno.jpg"
+    }
 }
