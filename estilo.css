@@ -5,13 +5,13 @@ body {
 .container {   
     display: grid;
     grid-template-columns: 200px 200px 200px 200px 200px;
-    margin-left: 23%;
+    margin-left: 23.2%;
     margin-right: 10px;
 }
 
 .box{
     background-color: transparent;
-    margin: 10px;
+    margin: 5px;
     border-radius: 10px;
     padding: 15px;
 }

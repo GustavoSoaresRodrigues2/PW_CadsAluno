@@ -7,6 +7,7 @@ function buscarDados(){
     })
 
     .then(function(response){
+        console.log(response)
         preencherCard(response)
     })
 }
