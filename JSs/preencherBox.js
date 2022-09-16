@@ -16,6 +16,12 @@ function preencherCard(listarAlunos) {
         // colocando uma class na div criada
         novaDiv.classList.add('box')
 
+        // acionando evento de click no card | não funciona se estiver inserido no .html
+        novaDiv.onclick = irParadetalhes
+
+        // 
+        novaDiv.src = printAluno
+
         // variaveis para inserir a novaDiv na tela
         var p1 = novaDiv.children[1].children[0]
         var p2 = novaDiv.children[1].children[1]
@@ -24,7 +30,7 @@ function preencherCard(listarAlunos) {
         // inserindo a novaDiv na tela
         p1.textContent = "Nome: " + printAluno.nome
         p2.textContent = "Média: " + printAluno.media
-        imgAluno.src = "./aluno.jpg"
+        imgAluno.src = "../../PW_CadsAluno/image/aluno.jpg"
 
         // printando a novaDiv
         div.appendChild(novaDiv)
